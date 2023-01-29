@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
-public class Main {
+public class App {
     Scanner scanner = new Scanner(System.in);
     final String URL = "jdbc:postgresql://localhost:5432/it.academy";
     final String USER_NAME = "postgres";
@@ -79,11 +79,5 @@ public class Main {
         }
         statement.setString(3, String.valueOf(logs));
         statement.executeUpdate();
-    }
-
-    public static void main(String[] args) throws Exception {
-        Main main = new Main();
-//        main.register();
-        main.authorize();
     }
 }
