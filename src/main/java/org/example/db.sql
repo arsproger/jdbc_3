@@ -7,6 +7,7 @@ CREATE TABLE Users(
 );
 
 CREATE TABLE User_logs(
+    id SERIAL PRIMARY KEY,
     login VARCHAR NOT NULL,
     entry_time TIMESTAMP,
     fail VARCHAR NOT NULL
