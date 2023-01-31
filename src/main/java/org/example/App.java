@@ -63,7 +63,7 @@ public class App {
                 res = true;
         }
         statement = connect.prepareStatement(
-                "INSERT INTO User_logs VALUES (?, ?, ?)"
+                "INSERT INTO User_logs(login, entry_time, fail) VALUES (?, ?, ?)"
         );
         statement.setString(1, login);
         statement.setTimestamp(2,
